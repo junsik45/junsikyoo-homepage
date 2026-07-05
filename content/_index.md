@@ -1,127 +1,89 @@
 ---
-# Leave the homepage title empty to use the site title
-title: ''
-summary: ''
-date: 2022-10-24
+title: Jun-Sik Yoo
 type: landing
 
 sections:
-  - block: resume-biography-3
+  - block: about.biography
+    id: about
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: me
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
+      title: ""
+      username: admin
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
-        gradient_mesh:
-          enable: true
+        color: white
+      spacing:
+        padding: ["40px", "0", "40px", "0"]
 
-      # Name heading sizing to accommodate long or short names
-      name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
-      avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
   - block: markdown
+    id: research
     content:
-      title: '📚 My Research'
-      subtitle: ''
+      title: Research
+      subtitle: ""
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        My work focuses on high-dimensional computational systems in physics and AI. I develop numerical, statistical, and machine-learning methods for extracting reliable structure from large-scale scientific computations.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        ### Lattice QCD and Precision Physics
 
-        Please reach out to collaborate 😃
+        I work on first-principles calculations of hadronic matrix elements relevant to precision Standard Model tests and searches for physics beyond the Standard Model. My research includes proton decay, electroweak radiative corrections, nucleon charges and form factors, electric dipole moments, and inclusive scattering.
+
+        ### High-Performance Scientific Computing
+
+        I develop and optimize lattice-field-theory software for modern HPC architectures, including GPU and many-core systems. My work includes solver optimization, deflation, data pipelines, production workflows, and performance analysis on large-scale computing platforms.
+
+        ### Machine Learning and Representation Geometry
+
+        I study the internal geometry of neural network computations, including transformer layer updates, quantization-induced changes, numerical manifolds, predictive visual representations, and scientific machine-learning methods for field theory.
     design:
-      columns: '1'
+      columns: "1"
+      spacing:
+        padding: ["30px", "0", "30px", "0"]
+
   - block: collection
-    id: papers
+    id: publications
     content:
-      title: Featured Publications
+      title: Selected Publications
+      subtitle: ""
+      text: ""
+      count: 6
       filters:
         folders:
-          - publications
+          - publication
         featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
+      sort_by: "Date"
+      sort_ascending: false
     design:
       view: citation
+      columns: "1"
+
   - block: collection
-    id: talks
+    id: projects
     content:
-      title: Recent & Upcoming Talks
+      title: Selected Projects
+      subtitle: ""
+      text: ""
+      count: 6
       filters:
         folders:
-          - events
+          - project
+      sort_by: "Date"
+      sort_ascending: false
     design:
       view: card
-  - block: collection
-    id: news
+      columns: "2"
+
+  - block: markdown
+    id: contact
     content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
-  - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
-    content:
-      title: 👉 Build your own academic website like this
+      title: Contact
+      subtitle: ""
       text: |-
-        This site is generated by HugoBlox Kit - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
+        For research collaboration, speaking invitations, or questions about my work, please contact me by email.
 
-        <a class="github-button" href="https://github.com/HugoBlox/kit" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/kit on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        **Email:** YOUR_EMAIL@lanl.gov  
+        **GitHub:** [YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)  
+        **Google Scholar:** [Profile](https://scholar.google.com/citations?user=YOUR_ID)
     design:
-      card:
-        # Card background color (CSS class)
-        css_class: 'bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 text-white shadow-2xl'
-        css_style: ''
+      columns: "1"
+      spacing:
+        padding: ["30px", "0", "60px", "0"]
 ---
