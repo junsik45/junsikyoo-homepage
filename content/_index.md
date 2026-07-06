@@ -3,14 +3,12 @@ title: Jun-Sik Yoo
 type: landing
 
 sections:
-  - block: about.biography
+  - block: resume-biography-3
     id: about
     content:
-      title: ""
       username: admin
+      text: ""
     design:
-      background:
-        color: white
       spacing:
         padding: ["40px", "0", "40px", "0"]
 
@@ -42,14 +40,12 @@ sections:
     id: publications
     content:
       title: Selected Publications
-      subtitle: ""
-      text: ""
       count: 6
       filters:
         folders:
           - publication
         featured_only: true
-      sort_by: "Date"
+      sort_by: Date
       sort_ascending: false
     design:
       view: citation
@@ -59,13 +55,11 @@ sections:
     id: projects
     content:
       title: Selected Projects
-      subtitle: ""
-      text: ""
       count: 6
       filters:
         folders:
           - project
-      sort_by: "Date"
+      sort_by: Date
       sort_ascending: false
     design:
       view: card
@@ -75,7 +69,6 @@ sections:
     id: contact
     content:
       title: Contact
-      subtitle: ""
       text: |-
         For research collaboration, speaking invitations, or questions about my work, please contact me by email.
 
